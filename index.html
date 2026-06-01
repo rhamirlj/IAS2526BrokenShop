@@ -123,6 +123,15 @@
 
     <div id="toastContainer" class="fixed top-4 right-4 z-50 space-y-2"></div>
 
+    <script>
+    const input = document.getElementById('withdrawAmount');
+
+    input.addEventListener('keydown', function (e) {
+        if (e.key === '-') {
+            e.preventDefault();
+        }
+    });
+    </script>
     <div id="flagModal"
         class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 modal-hidden items-center justify-center">
         <div class="glass-card rounded-2xl p-8 max-w-md mx-4 text-center neon-border border-yellow-500/50">
